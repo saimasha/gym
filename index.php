@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>HealthKart Clone - Landing Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+/* HERO IMAGE */
+.hero-img {
+  height: 350px;
+  object-fit: cover;
+}
+
+/* PROMO BOXES */
+.promo-box {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  font-weight: 600;
+}
+
+/* CATEGORY */
+.cat-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cat-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.product-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.rating i {
+  color: gold;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+    </style>
+</head>
+
+<body class="bg-light">
+
+<!-- ✅ NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="https://via.placeholder.com/140x40?text=Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="#">Shop By Category</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Best Sellers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Brands</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Offer Zone</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search products..." />
+        <button class="btn btn-primary">Search</button>
+      </form>
+
+      <div class="ms-3">
+        <a class="btn btn-outline-primary me-2">Login</a>
+        <a class="btn btn-primary">Cart (0)</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ HERO SLIDER -->
+<div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200
+"
+           class="d-block w-100 hero-img">
+      <div class="carousel-caption">
+        <h2>Big Fitness Sale</h2>
+        <p>Up to 50% off on top brands</p>
+        <a class="btn btn-primary">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/4040646/pexels-photo-4040646.jpeg"
+           class="d-block w-100 hero-img">
+      <div class="carousel-caption">
+        <h2>Premium Supplements</h2>
+        <p>Best quality products for energy</p>
+        <a class="btn btn-primary">Explore</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/5935788/pexels-photo-5935788.jpeg"
+           class="d-block w-100 hero-img">
+      <div class="carousel-caption">
+        <h2>Daily Vitamins</h2>
+        <p>Boost your immunity naturally</p>
+        <a class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container py-4 fade-in">
+  <div class="row text-center">
+    <div class="col-md-4"><div class="promo-box">✅ Genuine Products</div></div>
+    <div class="col-md-4"><div class="promo-box">🚚 Free Delivery</div></div>
+    <div class="col-md-4"><div class="promo-box">💬 24/7 Support</div></div>
+  </div>
+</div>
+
+<!-- ✅ CATEGORY SECTION -->
+<div class="container py-5 fade-in">
+  <h3 class="fw-bold mb-3">Shop by Category</h3>
+
+  <div class="row g-4">
+
+    <div class="col-6 col-md-3">
+      <div class="cat-card">
+        <img src="https://images.pexels.com/photos/932249/pexels-photo-932249.jpeg">
+        <h5>Proteins</h5>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="cat-card">
+        <img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg">
+        <h5>Vitamins</h5>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="cat-card">
+        <img src="https://images.pexels.com/photos/6207361/pexels-photo-6207361.jpeg">
+        <h5>Ayurveda</h5>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="cat-card">
+        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg">
+        <h5>Health Foods</h5>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ✅ PRODUCT SECTION -->
+<div class="container py-5 fade-in">
+  <h3 class="fw-bold mb-4">Best Sellers</h3>
+
+  <div class="row g-4">
+
+    <!-- Product 1 -->
+    <div class="col-6 col-md-3">
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/844228/pexels-photo-844228.jpeg" class="product-img">
+        <h5>Whey Protein 1kg</h5>
+        <div class="rating">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+          <i class="bi bi-star"></i>
+        </div>
+        <p class="price">₹1,499</p>
+        <button onclick="addToCart()" class="btn btn-primary w-100">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-6 col-md-3">
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/4219658/pexels-photo-4219658.jpeg" class="product-img">
+        <h5>Multivitamin Gummies</h5>
+        <div class="rating">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          <i class="bi bi-star"></i>
+        </div>
+        <p class="price">₹499</p>
+        <button onclick="addToCart()" class="btn btn-primary w-100">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-6 col-md-3">
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/4040655/pexels-photo-4040655.jpeg" class="product-img">
+        <h5>Omega 3 Fish Oil</h5>
+        <div class="rating">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+        </div>
+        <p class="price">₹899</p>
+        <button onclick="addToCart()" class="btn btn-primary w-100">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-6 col-md-3">
+      <div class="product-card">
+        <img src="https://images.pexels.com/photos/3931545/pexels-photo-3931545.jpeg" class="product-img">
+        <h5>Vitamin C Tablets</h5>
+        <div class="rating">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+          <i class="bi bi-star"></i>
+        </div>
+        <p class="price">₹299</p>
+        <button onclick="addToCart()" class="btn btn-primary w-100">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ✅ ADD-TO-CART POPUP -->
+<div class="modal fade" id="cartPopup">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 text-center">
+      <h4>✅ Item added to cart</h4>
+      <button class="btn btn-secondary mt-3" data-bs-dismiss="modal">Continue</button>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function addToCart() {
+    var modal = new bootstrap.Modal(document.getElementById('cartPopup'));
+    modal.show();
+}
+
+// Fade-In animation on scroll
+const faders = document.querySelectorAll(".fade-in");
+window.addEventListener("scroll", () => {
+  faders.forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 150) {
+      el.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
